@@ -45,6 +45,7 @@ exported_table_schema:
   server: full
 metadata: {description: Provide real-time updates and in-game predictions during live broadcasts. Explore Gamification, logo_img: 'asset:images.png', title: MLB Moments}
 name: ' MLB MOMENTS ERICKSALAS'
+native_deps: {head_html: ''}
 package_name: _MLB_MOMENTS_ERICKSALAS
 renamed: true
 runtime_options:
