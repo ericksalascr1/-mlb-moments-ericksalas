@@ -1,8 +1,7 @@
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
-import requests
+import anvil.http
 import os
 import pandas as pd  # Correct import for pandas
 
