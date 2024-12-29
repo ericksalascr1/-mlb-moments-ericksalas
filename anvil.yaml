@@ -60,3 +60,4 @@ services:
   server_config: {}
   source: /runtime/services/anvil/email.yml
 startup_form: HomeForm
+uplink_visible: true
