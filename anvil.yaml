@@ -43,9 +43,9 @@ exported_table_schema:
   name: feedback
   python_name: feedback
   server: full
-metadata: {}
-name: Feedback Form 1
-package_name: Feedback_Form_1
+metadata: {description: Provide real-time updates and in-game predictions during live broadcasts. Explore Gamification, logo_img: 'asset:images.png', title: MLB Moments}
+name: ' MLB MOMENTS ERICKSALAS'
+package_name: _MLB_MOMENTS_ERICKSALAS
 renamed: true
 runtime_options:
   client_version: '3'

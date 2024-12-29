@@ -4,7 +4,45 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+!pip install Flask==2.2.2  # Install Flask
 
+import requests
+import os
+import pandas as pd
+
+# ... (rest of the code from the Colab notebook) ...
+
+# Assuming 'pitching_stats' DataFrame is already loaded as in the previous code.
+
+def get_player_stats(player_id):
+    """
+    Retrieves pitching statistics for a given player ID.
+
+    Args:
+        player_id: The ID of the player.
+
+    Returns:
+        A pandas DataFrame containing the player's pitching statistics,
+        or None if the player is not found.
+    """
+    try:
+        player_id = int(player_id)  # Ensure player_id is an integer
+        player_stats = pitching_stats[pitching_stats["player_id"] == player_id]
+        if not player_stats.empty:
+            return player_stats
+        else:
+          return None
+    except (ValueError, KeyError):
+        return None
+
+# Example usage
+player_id_to_lookup = 605141  # Example player ID (replace with desired ID)
+player_stats_result = get_player_stats(player_id_to_lookup)
+
+if player_stats_result is not None:
+  print(player_stats_result)
+else:
+  print(f"No stats found for player ID: {player_id_to_lookup}")
 #
 # This is the Python code that makes this feedback form work.
 # It's a Python class, with a method that runs when the user
