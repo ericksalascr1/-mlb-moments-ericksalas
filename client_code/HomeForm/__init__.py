@@ -1,10 +1,10 @@
-from ._anvil_designer import HomeFormTemplate
-from anvil import *
-import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-!pip install Flask==2.2.2  # Install Flask
+
+import requests
+import os
+import pandas as pd  # Correct import for pandas
 
 import requests
 import os
