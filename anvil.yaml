@@ -1,6 +1,6 @@
 allow_embedding: false
 correct_dependency_ids: {}
-cta: {preset: feedback_form_welcome}
+cta: null
 db_schema:
   feedback:
     client: none
