@@ -1,0 +1,62 @@
+allow_embedding: false
+correct_dependency_ids: {}
+cta: {preset: feedback_form_welcome}
+db_schema:
+  feedback:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: name
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: email
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: feedback
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: created
+      type: datetime
+    server: full
+    title: Feedback
+dependencies: []
+exported_table_schema:
+- client: none
+  columns:
+    16Hus1t6n6w=:
+      admin_ui: {order: 2, width: 200}
+      name: feedback
+      type: string
+    Px8zj6UwDFM=:
+      admin_ui: {order: 3, width: 200}
+      name: created
+      type: datetime
+    nwWI7aBZtwc=:
+      admin_ui: {order: 0, width: 200}
+      name: name
+      type: string
+    yT7YVvq4+Co=:
+      admin_ui: {order: 1, width: 200}
+      name: email
+      type: string
+  id: 1264
+  name: feedback
+  python_name: feedback
+  server: full
+metadata: {}
+name: Feedback Form 1
+package_name: Feedback_Form_1
+renamed: true
+runtime_options:
+  client_version: '3'
+  server_spec: {base: python310-minimal}
+  server_version: python3-sandbox
+  version: 2
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
+startup_form: HomeForm
