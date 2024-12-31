@@ -1,7 +1,24 @@
 allow_embedding: false
 correct_dependency_ids: {}
 cta: null
-db_schema: {}
+db_schema:
+  feedback:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: name
+      type: string
+    - admin_ui: {width: 200}
+      name: email
+      type: string
+    - admin_ui: {width: 200}
+      name: feedback
+      type: string
+    - admin_ui: {width: 200}
+      name: created
+      type: datetime
+    server: full
+    title: Feedback
 dependencies: []
 exported_table_schema:
 - client: none
