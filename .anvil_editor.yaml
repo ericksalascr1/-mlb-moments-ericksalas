@@ -7,8 +7,7 @@ unique_ids:
     run-button.png: '1695343459366326673384303.53296'
     standard-page.html: Q3QO6SVCSYGG2URQPHD2WQN53IJYWBMT
     theme.css: WZK5YAI72HXBAVF2NY77323MVSKI5HGU
-  forms:
-    HomeForm: RXKECMZN34MQAHDRK6EPIICDWR6S3KGX
+  forms: {}
   modules: {}
   scripts: {}
   server_modules:
