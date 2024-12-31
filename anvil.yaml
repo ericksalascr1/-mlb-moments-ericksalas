@@ -1,7 +1,12 @@
 allow_embedding: false
 correct_dependency_ids: {}
 cta: null
-db_schema: {}
+db_schema:
+  table_1:
+    client: none
+    columns: []
+    server: full
+    title: Table 1
 dependencies: []
 exported_table_schema:
 - client: none
